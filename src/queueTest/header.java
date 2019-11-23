@@ -13,6 +13,7 @@ public class header {
 	private static tpWorker TpWorker2 = new tpWorker();
 	private static tpWorker TpWorker3 = new tpWorker();
 	//private static ArrayList<component> stock = new ArrayList<>(); // Закомментировано
+	// В общем то ветка создалась
 
 		   public static void main(String[] args) {
 			   seWorker.setQueue(queue);
