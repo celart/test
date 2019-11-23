@@ -11,7 +11,7 @@ public class seWorker implements Runnable{
 	private static Queue<component> queue;// = new LinkedList<>();
 	
 	public void start() {
-		System.out.println("Запуск " + this.objName);
+		System.out.println("Р—Р°РїСѓС‰РµРЅ " + this.objName);
 		if (seWorker.queue == null) {
 			queue = new LinkedList<>();
 		}
@@ -69,7 +69,7 @@ public class seWorker implements Runnable{
 			c.setInp1(""+i);
 			c.setFrom(getObjName());
 			getQueue().offer(c);
-			System.out.println( getObjName() + " Отправлен: " + i);
+			System.out.println( getObjName() + " Р”РѕР±Р°РІР»РµРЅ: " + i);
 			i++;
 		}
 	}

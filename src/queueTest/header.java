@@ -3,7 +3,7 @@ package queueTest;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
-
+// Добавлен коммент
 
 public class header {
 	private static Queue<component> queue = new LinkedList<>();
@@ -12,7 +12,8 @@ public class header {
 	private static tpWorker TpWorker1 = new tpWorker();
 	private static tpWorker TpWorker2 = new tpWorker();
 	private static tpWorker TpWorker3 = new tpWorker();
-	private static ArrayList<component> stock = new ArrayList<>();
+	//private static ArrayList<component> stock = new ArrayList<>(); // Закомментировано
+	// В общем то ветка создалась
 
 		   public static void main(String[] args) {
 			   seWorker.setQueue(queue);
