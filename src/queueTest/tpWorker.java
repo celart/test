@@ -11,7 +11,7 @@ public class tpWorker implements Runnable{
 	private static Queue<component> queue;// = new LinkedList<>();
 	
 	public void start() {
-		System.out.println("Запуск " + this.objName);
+		System.out.println("Р—Р°РїСѓС‰РµРЅ " + this.objName);
 		if (tpWorker.queue == null) {
 			queue = new LinkedList<>();
 		}
@@ -58,17 +58,17 @@ public class tpWorker implements Runnable{
 		component c;
 		while(tpWorker.flag | ((c=getQueue().poll()) != null)) {
 			if (c != null) {
-				System.out.println("Получен: "+ getObjName()+" "+ c.getInp1() + " от " + c.getFrom());
+				System.out.println("РџРѕР»СѓС‡РµРЅ: "+ getObjName()+" "+ c.getInp1() + " РѕС‚ " + c.getFrom());
 				try {
 					Thread.sleep(this.sleepingTime);
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				System.out.println("Обработал: "+ getObjName()+" "+ c.getInp1() + " от " + c.getFrom());
+				System.out.println("РџРѕР»СѓС‡РµРЅ: "+ getObjName()+" "+ c.getInp1() + " РѕС‚ " + c.getFrom());
 				c.setInp2(c.getInp1());
 			} else {
-				System.out.println("Ожидание");
+				System.out.println("РћР¶РёРґР°РЅРёРµ " + getObjName());
 			}
 		}
 	}
