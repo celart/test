@@ -3,6 +3,7 @@ package queueTest;
 public class component {
 	private String inp1;
 	private String inp2;
+	private String inp3;
 	private String from;
 	
 	
@@ -24,6 +25,12 @@ public class component {
 	}
 	public void setFrom(String inp2) {
 		this.from = inp2;
+	}
+	public String getInp3() {
+		return inp3;
+	}
+	public void setInp3(String inp3) {
+		this.inp3 = inp3;
 	}
 
 
