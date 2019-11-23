@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
+
 public class header {
 	private static Queue<component> queue = new LinkedList<>();
 	private static seWorker SeWorker1 = new seWorker();
