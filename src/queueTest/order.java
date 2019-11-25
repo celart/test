@@ -8,6 +8,7 @@ public class order {
 	private String id;
 	private int qty=5;
 	private order parentOrder;
+	private order rootOrder;
 	
 	public order() {
 		super();
@@ -67,6 +68,14 @@ public class order {
 
 	public void setParentOrder(order parentOrder) {
 		this.parentOrder = parentOrder;
+	}
+
+	public order getRootOrder() {
+		return rootOrder;
+	}
+
+	public void setRootOrder(order rootOrder) {
+		this.rootOrder = rootOrder;
 	}
 
 }
